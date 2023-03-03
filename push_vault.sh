@@ -2,7 +2,6 @@
 
 # globals
 DEST_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
-URL="https://github.com/josePereiro/ReadingCallen"
 
 if [ ! -z $1 ] 
 then 
@@ -12,17 +11,19 @@ else
     exit 1
 fi
 
+echo "";
 echo "-------------------------------";
 echo "copying from: ${SRC_DIR}";
 echo "copying to:   ${DEST_DIR}/2_notes";
 echo "pushing to:   ${URL}";
-echo "";
 
+echo "";
 echo "-------------------------------";
 echo "copiying";
+echo "";
 
 # copying
-declare -a tocopy=("Desk.md")
+declare -a tocopy=("@callenThermodynamicsIntroductionThermostatistics1985.md")
 ## now loop through the above array
 for file in "${tocopy[@]}"
 do
@@ -31,4 +32,15 @@ do
    # or do whatever with individual element of the array
 done
 
+echo "";
+echo "-------------------------------";
+echo "pushing";
+echo "";
+
+#  dummy
+date > .dummy
+
+git add -A
+git commit -m "push_vault"
+git push
 
