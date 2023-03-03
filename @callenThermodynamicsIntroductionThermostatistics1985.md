@@ -107,6 +107,12 @@ $$
 
 It should be noted that an immediate implication of postulate IV is that $S$ (like $V$ and $N$, but unlike $U$) has a uniquely defined zero.
 
+The condition also has direct implications upon the plot shape of S vs U
+
+## Chapter 2
+
+### 2-1 Intensive parameters
+
 
 
 
