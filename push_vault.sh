@@ -40,6 +40,7 @@ echo "";
 #  dummy
 date > .dummy
 
+git pull
 git add -A
 git commit -m "push_vault"
 git push
