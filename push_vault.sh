@@ -22,6 +22,8 @@ echo "-------------------------------";
 echo "copiying";
 echo "";
 
+git pull
+
 # copying
 declare -a tocopy=("@callenThermodynamicsIntroductionThermostatistics1985.md")
 ## now loop through the above array
